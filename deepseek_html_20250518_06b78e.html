@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvard CS Class of 2025 | Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        
+        .countdown-box {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+        
+        .harvard-crimson {
+            color: #A41034;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center px-4">
+        <div class="container mx-auto relative z-10">
+            <div class="glass-card max-w-4xl mx-auto p-8 md:p-12 text-center">
+                <div class="flex justify-center mb-6">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center pulse">
+                        <i class="fas fa-graduation-cap text-3xl harvard-crimson"></i>
+                    </div>
+                </div>
+                <h1 class="title-font text-4xl md:text-6xl font-bold mb-4 harvard-crimson">CS Class of 2025</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Harvard University</h2>
+                
+                <div class="mb-8">
+                    <p class="text-xl md:text-2xl mb-6">Our legacy begins soon...</p>
+                    <div class="inline-block px-6 py-3 bg-white text-gray-900 font-bold rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+                        <span class="harvard-crimson">Coming June 2025</span>
+                    </div>
+                </div>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-box rounded-lg p-4 max-w-md mx-auto mb-8">
+                    <h3 class="text-lg font-semibold mb-4">Countdown to Graduation</h3>
+                    <div class="flex justify-center space-x-2 md:space-x-4">
+                        <div class="text-center">
+                            <div class="text-2xl md:text-4xl font-bold days">00</div>
+                            <div class="text-xs md:text-sm opacity-80">Days</div>
+                        </div>
+                        <div class="text-2xl md:text-4xl font-bold">:</div>
+                        <div class="text-center">
+                            <div class="text-2xl md:text-4xl font-bold hours">00</div>
+                            <div class="text-xs md:text-sm opacity-80">Hours</div>
+                        </div>
+                        <div class="text-2xl md:text-4xl font-bold">:</div>
+                        <div class="text-center">
+                            <div class="text-2xl md:text-4xl font-bold minutes">00</div>
+                            <div class="text-xs md:text-sm opacity-80">Minutes</div>
+                        </div>
+                        <div class="text-2xl md:text-4xl font-bold">:</div>
+                        <div class="text-center">
+                            <div class="text-2xl md:text-4xl font-bold seconds">00</div>
+                            <div class="text-xs md:text-sm opacity-80">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-900 hover:bg-gray-200 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-900 hover:bg-gray-200 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-900 hover:bg-gray-200 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-900 hover:bg-gray-200 transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8 text-sm opacity-80">
+                <p>© 2023 Harvard University Computer Science Class of 2025</p>
+            </div>
+        </div>
+        
+        <!-- Floating elements for decoration -->
+        <div class="absolute top-1/4 left-10 w-8 h-8 rounded-full bg-white opacity-20 floating" style="animation-delay: 0s;"></div>
+        <div class="absolute top-1/3 right-20 w-12 h-12 rounded-full bg-red-500 opacity-20 floating" style="animation-delay: 0.5s;"></div>
+        <div class="absolute bottom-1/4 left-1/4 w-10 h-10 rounded-full bg-blue-500 opacity-20 floating" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-1/3 right-1/3 w-6 h-6 rounded-full bg-yellow-500 opacity-20 floating" style="animation-delay: 1.5s;"></div>
+    </section>
+
+    <script>
+        // Countdown timer
+        function updateCountdown() {
+            // Set the graduation date (June 1, 2025)
+            const graduationDate = new Date('June 1, 2025 00:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = graduationDate - now;
+            
+            // Time calculations
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Display the result
+            document.querySelector('.days').innerHTML = days.toString().padStart(2, '0');
+            document.querySelector('.hours').innerHTML = hours.toString().padStart(2, '0');
+            document.querySelector('.minutes').innerHTML = minutes.toString().padStart(2, '0');
+            document.querySelector('.seconds').innerHTML = seconds.toString().padStart(2, '0');
+            
+            // If graduation has passed
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                document.querySelector('.countdown-box').innerHTML = '<div class="text-xl font-bold">We\'ve Graduated!</div>';
+            }
+        }
+        
+        // Update the countdown every 1 second
+        updateCountdown();
+        const countdownTimer = setInterval(updateCountdown, 1000);
+        
+        // Typewriter effect for the subtitle
+        const subtitles = [
+            "Future innovators in the making...",
+            "Building the technology of tomorrow...",
+            "Harvard's next generation of computer scientists...",
+            "Veritas in code and algorithms..."
+        ];
+        
+        let currentSubtitle = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 100;
+        
+        function typeWriter() {
+            const subtitleElement = document.querySelector('.subtitle');
+            
+            if (!subtitleElement) return;
+            
+            const fullText = subtitles[currentSubtitle];
+            
+            if (isDeleting) {
+                subtitleElement.textContent = fullText.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 50;
+            } else {
+                subtitleElement.textContent = fullText.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 100;
+            }
+            
+            if (!isDeleting && charIndex === fullText.length) {
+                isDeleting = true;
+                typingSpeed = 1500; // Pause at end of sentence
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                currentSubtitle = (currentSubtitle + 1) % subtitles.length;
+                typingSpeed = 500; // Pause before typing next sentence
+            }
+            
+            setTimeout(typeWriter, typingSpeed);
+        }
+        
+        // Start the typewriter effect after the page loads
+        window.addEventListener('load', () => {
+            // Create subtitle element if you want to use the typewriter effect
+            // You would need to add a div with class "subtitle" to your HTML
+            // setTimeout(typeWriter, 1000);
+        });
+    </script>
+</body>
+</html>
